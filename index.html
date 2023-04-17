@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>weather-app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Password Generator</title>
 </head>
 <body>
-    <div class="nm">
-    <div class="main" id="main">
-        <form class="search" id="search">
-         <input id="input" 
-                class="inputs" 
-                type="text" 
-                placeholder="Your city Name"
-                autocomplete="off"/>
-        </form>
+    <div class="pwo">
+    <div class="main">
+        <h3>Password Generator</h3>
+        <div class="pw">
+        <span id="password">cpoy_yuor_passdwrod</span>  
+        <button id="copy"><i class="fa-solid fa-paste"></i></button>
+          </div>
+        
+        
+      <div class="form-control">
+        <label>Password Length</label> 
+        <input id="length" value="15" type="number" min="2" max="30">
+        </div>
+        
+        <div class="form-control">
+        <label>Include Uppercase</label> 
+        <input id="upper" type="checkbox">
+        </div>
+        
+        <div class="form-control">
+        <label>Include Lowercase</label> 
+        <input id="lower" type="checkbox">
+        </div>
+        
+        <div class="form-control">
+        <label>Include numbers</label>
+        <input id="number" type="checkbox">
+        </div>
+        
+        <div class="form-control">
+        <label>Include symbols</label>
+        <input id="symbol" type="checkbox">
+        </div>
+       
+        <button class="btn2" id="generate">Generate Password</button>
       </div>
-      <a href="https://twitter.com/prvnBrTwal" target="_blank">@Praveen_singh</a>
+      <p>@Praveen_Singh</p>
     </div>
-
+   
 </body>
 <script src="script.js"></script>
 </html>

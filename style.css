@@ -2,95 +2,96 @@
     box-sizing:border-box;
   }
   body{
-    background-image: url("https://wallpaperaccess.com/full/850891.jpg");
-    color:white;
+    margin: 0;
+    background:#663398;
+    font-family: 'EB Garamond', serif;
+    color:white; 
+  }
+  
+  .pwo{
+    
     display:flex;
     justify-content:center;
-    align-items:center;
-    height:100vh;
-    background-size: 100% 100%;   
-    overflow: hidden;
-  }
-  .search{
-    display:flex;
-    justify-content:center;
-    padding:1rem;
-    border: none;
-    outline: none;
-    text-align: left;
-
-  }
-  input::placeholder {
-    color: gray;
-  }
-  input {
-    background: #ecf0f3;
-    padding: 10px;
-    padding-left: 20px;
-    font-size: 14px;
-    border-radius: 50px;
-    border:1px solid #f48225b9;
-    box-shadow: #f48225b9 0px -1px 15px;
-
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
   }
   
   .main{
-      width:500px;
-      box-shadow: #f48225b9 0px -1px 15px;
-      border-radius: 10px;
-     background-color: rgba(0,0,0,.5);
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    background:#23235B;
+    padding:0rem 1rem;
+  /*   background:#757EF4; */
+    align-items:center;
+    width:300px;
   }
-  .head{
-  /*   border:solid red; */
-    text-align: center;
-    background-color: rgba(64	,96,	111, .3); 
-    margin:0.7rem 0rem;
-    padding:0.5rem;
+  .main h3{
+     margin-left:1.8rem;
+    font-size:1.5rem;
+    letter-spacing: 2px;
   }
-  .head h4{
-    margin:0rem;
-  }
-  .head h1{
-      margin:0rem;
-  }
-  .display{
-  /*   border:solid red; */
+  .form-control
+  {
     display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.4rem;
   }
-  .display img{
-    width:200px;
+  .pw{
+  box-shadow: rgba(90, 50, 93, 3.85) 0px 2px 5px -1px, rgba(0, 0, 0, 1.3) 0px 1px 3px -1px;
+    background:#461C6E;
+      display: flex;
+      font-size: 1.2rem;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      position: relative;
+      padding: 1rem;
+  /*     overflow: auto; */
+      overflow: hidden;
+    margin-bottom:1rem;
   }
-  .temp{
-  /*   border:solid red; */
-   margin:1rem; 
+  .pw button {
+     background-color: #98448A;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: bold;
+    font-size:1.4rem;
+    padding:0.3rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+    margin-right:0.2rem;
+      transform: translate(0, 20%);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      opacity: 0;
   }
-  .temp .h{
-    display:inline;
+  .pw:hover button {
+      opacity: 1;
   }
-  .tempchild{
-      text-align: center;
-    
+  
+  .btn2{
+    box-shadow: rgba(90, 50, 93, 3.85) 0px 2px 5px -1px, rgba(0, 0, 0, 1.3) 0px 1px 3px -1px;
+   background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  
+     border: none;
+     color: #DCD9F4;
+     cursor: pointer;
+     display: block;
+     font-size: 1rem;
+     font-weight: bold;
+     padding: 0.5rem;
+     margin:1rem 0rem;
+     width: 100%;  
   }
-  .days {
-    text-align: center;
-      margin:1rem 0rem;
-    padding:1rem;
-      background-color: rgba(64	,96,	111, .3);
-    display:flex;
-    justify-content:center;
+  .btn2:hover{
+    transform: scale(1.05);
   }
-  .days div{
-  /*   border:solid red; */
-    margin:0rem 0.7rem;
-    font-size:1rem;
-  }
-  .nm a{
-    display: flex;
-    justify-content: center;
-    letter-spacing: 1.5px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-
+  p{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: black;
   }
   
